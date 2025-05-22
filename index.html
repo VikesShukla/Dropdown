@@ -34,6 +34,17 @@
       <button type="submit" class="submit-btn">Submit</button>
     </form>
   </div>
+  <!-- Modal Structure -->
+<div id="locationModal" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
+  <div style="background:#fff; padding:24px; border-radius:8px; min-width:300px; position:relative;">
+    <span id="closeModal" style="position:absolute; top:8px; right:12px; cursor:pointer; font-size:20px;">&times;</span>
+    <h2>Selected Location</h2>
+    <div id="modalLocation"></div>
+    <div id="modalMap" style="margin-top:16px;">
+      <!-- Map will be embedded here -->
+    </div>
+  </div>
+</div>
 
   <script src="./index.js"></script>
 </body>
